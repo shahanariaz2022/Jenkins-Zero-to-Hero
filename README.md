@@ -3,7 +3,8 @@ machines can be ec2 or vmware ubuntu
 
 # Set up Master Node
 
-Jenkins is a java based application. So first we need to install java on ubuntu machine. run following commands to install java.
+Jenkins is a java based application.   
+So first we need to install java on ubuntu machine. run following commands to install java.
 ```
 sudo apt update
 sudo apt install openjdk-17-jre
@@ -15,3 +16,13 @@ java -version
 ```
 
 Now, you can proceed with installing Jenkins
+
+```
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+```
