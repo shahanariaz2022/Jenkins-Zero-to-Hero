@@ -45,5 +45,7 @@ sudo apt-get install jenkins
  this architecture was good few years ago but with advancement of micreoservices, you have different type of applications.
  for example:   
  the worker node specific for windows application are just getting few request. so this machine always sitting idle. its a wastage of resources. so you have all these challanges with ec2 instances. to solve this problem we are going to adopt latest approach that is using jenkins as docker as agents. that means we try to run jenkins pipeline on dockers container. Docker containers are lightweight against vms. another thing is that for example if one team required nodejs 15 and another required node js 16 on vms it id difficult but on docker you can just go to dockerfile and change according to the requirments.  
+
+ containers can be anytime created, upgraded, and destroy.
  
  
