@@ -30,3 +30,15 @@ after this switch to jenkins user
 su - jenkins
 ```
 jenkins user is by default created when you install jenkins.
+
+now run this command
+
+```
+docker run hello-world
+```
+you will get error
+```
+docker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied
+
+Run 'docker run --help' for more information
+```
