@@ -42,3 +42,12 @@ docker: permission denied while trying to connect to the Docker daemon socket at
 
 Run 'docker run --help' for more information
 ```
+solution to the error
+logout from jenkins and grant permission again and then again login and run the command it will work.
+```
+logout
+sudo su - 
+usermod -aG docker jenkins
+su - jenkins
+docker run hello-world
+```
