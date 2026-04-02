@@ -37,7 +37,8 @@ sudo apt-get install jenkins
 
  # Jenkins Architecture
 
- Usually jenkins has one master node and 1 and more worker nodes(agent) architecture. master node has jenkins installed on it. There are multiple developers, multiple project teams and multiple development teams. So jenkins get alot of load. To offload these things you should use jenkins master for only scheduling purpose. because all of the things canot run on single jenkins master. if everything runs on a single jenkins master then it will have conflicting packages.   
+ Usually jenkins has one master node and 1 and more worker nodes(agent) architecture. master node has jenkins installed on it. There are multiple developers, multiple project teams and multiple development teams. So jenkins get alot of load. To offload these things you should use jenkins master for only scheduling purpose. because all of the things canot run on single jenkins master. if everything runs on a single jenkins master then it will have conflicting packages.      
  let's say one team required java version 7 and other team required java version 8, someone requires python 2 some one requires python 3. it is technically not possible to run everything on one jenkins master. not good for the purpose of load and not good for the purpose of dependencies conflict.    
- so whats people do ,they create jenkins master and worker nodes. worker 1 should use by applications 1 -10. worker 2 should use by applications 11 - 20. worker 3 is for only windows applications, worker 4 only for specific team.
+ so whats people do ,they create jenkins master and worker nodes. worker 1 should use by applications 1 -10. worker 2 should use by applications 11 - 20. worker 3 is for only windows applications, worker 4 only for specific team.  
+ so devops engineers are responsible to categorize these machines.
  
