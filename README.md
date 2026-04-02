@@ -8,3 +8,10 @@ Jenkins is a java based application. So first we need to install java on ubuntu 
 sudo apt update
 sudo apt install openjdk-17-jre
 ```
+Verify Java is Installed
+
+```
+java -version
+```
+
+Now, you can proceed with installing Jenkins
