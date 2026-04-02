@@ -51,3 +51,6 @@ usermod -aG docker jenkins
 su - jenkins
 docker run hello-world
 ```
+so now jenkins user can also create container and run container.
+
+restart your jenkins after this.
