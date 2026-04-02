@@ -54,3 +54,11 @@ docker run hello-world
 so now jenkins user can also create container and run container.
 
 restart your jenkins after this.
+
+#### Install the Docker Pipeline plugin in Jenkins:
+
+   - Log in to Jenkins.
+   - Go to Manage Jenkins > Manage Plugins.
+   - In the Available tab, search for "Docker Pipeline".
+   - Select the plugin and click the Install button.
+   - Restart Jenkins after the plugin is installed.
