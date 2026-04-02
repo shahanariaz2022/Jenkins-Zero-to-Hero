@@ -3,7 +3,7 @@ machines can be ec2 or vmware ubuntu
 
 # Set up Master Node
 
-Jenkins is a java based application. So first we need to install java on ubuntu machine.
+Jenkins is a java based application. So first we need to install java on ubuntu machine. run following commands to install java.
 ```
 sudo apt update
 sudo apt install openjdk-17-jre
