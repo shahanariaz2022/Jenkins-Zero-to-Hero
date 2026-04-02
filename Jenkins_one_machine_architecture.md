@@ -24,3 +24,9 @@ usermod -aG docker jenkins
 usermod -aG docker ubuntu
 systemctl restart docker
 ```
+after this switch to jenkins user
+
+```
+su - jenkins
+```
+jenkins user is by default created when you install jenkins.
